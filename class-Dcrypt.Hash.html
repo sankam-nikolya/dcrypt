@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Dcrypt\Hash</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Dcrypt.html">
+						Dcrypt					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Dcrypt.Aes.html">Aes</a></li>
+				<li><a href="class-Dcrypt.AesCtr.html">AesCtr</a></li>
+				<li><a href="class-Dcrypt.Cryptobase.html">Cryptobase</a></li>
+				<li class="active"><a href="class-Dcrypt.Hash.html">Hash</a></li>
+				<li><a href="class-Dcrypt.Mcrypt.html">Mcrypt</a></li>
+				<li><a href="class-Dcrypt.Otp.html">Otp</a></li>
+				<li><a href="class-Dcrypt.Pkcs7.html">Pkcs7</a></li>
+				<li><a href="class-Dcrypt.Random.html">Random</a></li>
+				<li><a href="class-Dcrypt.Rc4.html">Rc4</a></li>
+				<li><a href="class-Dcrypt.Spritz.html">Spritz</a></li>
+				<li><a href="class-Dcrypt.Str.html">Str</a></li>
+				<li><a href="class-Dcrypt.Support.html">Support</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Dcrypt.html" title="Summary of Dcrypt"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Hash</h1>
+
+
+	<div class="description">
+	<p>An opaque 512 bit iterative hash function.</p>
+
+<p>16 bytes => iv
+12 bytes => cost checksum 4 bytes => cost
+32 bytes => hmac</p>
+
+<p>ivivivivivivivivsssssssssssscosthmachmachmachmachmachmachmachmac</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Dcrypt.Support.html"><span>Dcrypt\Support</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Dcrypt\Hash</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		<b>Final</b><br>
+		
+		<b>Namespace:</b> <a href="namespace-Dcrypt.html">Dcrypt</a><br>
+		<b>Package:</b> Dcrypt<br>
+
+				<b>Category:</b>
+				Dcrypt<br>
+				<b>License:</b>
+				<a href="http://opensource.org/licenses/MIT">The MIT License (MIT)</a><br>
+				<b>Author:</b>
+				Michael Meyer (mmeyer2k) <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x6d;&#x2e;&#x6d;&#x65;&#x79;&#x65;&#x72;&#x32;&#x6b;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x6d;&#x2e;&#x6d;&#x65;&#x79;&#x65;&#x72;&#x32;&#x6b;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a><br>
+				<b>Link:</b>
+				<a href="https://github.com/mmeyer2k/dcrypt">https://github.com/mmeyer2k/dcrypt</a><br>
+				<b>Link:</b>
+				<a href="https://apigen.ci/github/mmeyer2k/dcrypt/namespace-Dcrypt.html">https://apigen.ci/github/mmeyer2k/dcrypt/namespace-Dcrypt.html</a><br>
+			<b>Located at</b> <a href="source-class-Dcrypt.Hash.html#17-155" title="Go to source code">Hash.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="ihmac" id="_ihmac">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ihmac">#</a>
+		<code><a href="source-class-Dcrypt.Hash.html#89-111" title="Go to source code">ihmac</a>( <span>string <var>$data</var></span>, <span>string <var>$key</var></span>, <span>integer <var>$iter</var></span>, <span>string <var>$algo</var> = <span class="php-quote">'sha256'</span></span> )</code>
+
+		<div class="description short">
+			<p>Perform a raw iterative HMAC operation with a configurable algo.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Perform a raw iterative HMAC operation with a configurable algo.</p>
+
+<p>This class always performs at least one hash to prevent the input from
+being passed back unchanged if bad parameters are set.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd>Data to hash.</dd>
+					<dt><var>$key</var></dt>
+					<dd>Key to use to authenticate the hash.</dd>
+					<dt><var>$iter</var></dt>
+					<dd>Number of times to iteratate the hash</dd>
+					<dt><var>$algo</var></dt>
+					<dd>Name of algo (sha256 or sha512 recommended)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="make" id="_make">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_make">#</a>
+		<code><a href="source-class-Dcrypt.Hash.html#113-125" title="Go to source code">make</a>( <span>string <var>$input</var></span>, <span>string <var>$password</var></span>, <span>integer <var>$cost</var> = <span class="php-num">250000</span></span> )</code>
+
+		<div class="description short">
+			<p>Hash an input string into a salted 512 byte hash.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Hash an input string into a salted 512 byte hash.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$input</var></dt>
+					<dd>Data to hash.</dd>
+					<dt><var>$password</var></dt>
+					<dd>HMAC validation password.</dd>
+					<dt><var>$cost</var></dt>
+					<dd>Cost value of the hash.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="verify" id="_verify">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_verify">#</a>
+		<code><a href="source-class-Dcrypt.Hash.html#127-153" title="Go to source code">verify</a>( <span>string <var>$input</var></span>, <span>string <var>$hash</var></span>, <span>string <var>$password</var></span> )</code>
+
+		<div class="description short">
+			<p>Check the validity of a hash.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check the validity of a hash.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$input</var></dt>
+					<dd>Input to test.</dd>
+					<dt><var>$hash</var></dt>
+					<dd>Known hash to validate against.</dd>
+					<dt><var>$password</var></dt>
+					<dd>HMAC password to use during iterative hash.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Dcrypt.Support.html#methods">Dcrypt\Support</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Dcrypt.Support.html#_bin2dec">bin2dec()</a>, 
+			<a href="class-Dcrypt.Support.html#_dec2bin">dec2bin()</a>, 
+			<a href="class-Dcrypt.Support.html#_hex2bin">hex2bin()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="ALGO" id="ALGO">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Dcrypt.Hash.html#37" title="Go to source code"><b>ALGO</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ALGO" class="anchor">#</a>
+				<code><span class="php-quote">'sha256'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
